@@ -1,4 +1,4 @@
-#Wed Aug 12 17:02:00 COT 2020
-base.0=C\:\\Users\\1607560\\Desktop\\veciapp\\veciapi\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+#Wed Aug 12 20:46:03 COT 2020
+base.0=C\:\\Users\\1607560\\Desktop\\veciapi_cliente\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
