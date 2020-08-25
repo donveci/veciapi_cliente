@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:veciapi/constants.dart';
 
 class OrDivider extends StatelessWidget {
   @override
@@ -13,13 +12,6 @@ class OrDivider extends StatelessWidget {
           buildDivider(),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 10),
-            child: Text(
-              "Forget your Password ?",
-              style: TextStyle(
-                color: kPrimaryColor,
-                fontWeight: FontWeight.w600,
-              ),
-            ),
           ),
           buildDivider(),
         ],

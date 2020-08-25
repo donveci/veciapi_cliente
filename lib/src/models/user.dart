@@ -1,0 +1,36 @@
+import 'dart:convert';
+
+//Firebase recibe datos tipo Stream
+
+UserModel userModelFromJson(String str) => UserModel.fromJson(json.decode(str));
+
+String userModelToJson(UserModel data) => json.encode(data.toJson());
+
+class UserModel {
+  String id;
+  String name;
+  String email;
+  String password;
+
+  UserModel({
+    this.id,
+    this.name,
+    this.email,
+    this.password,
+  });
+
+  //para recibir los datos se necesita a JSON
+  factory UserModel.fromJson(Map<String, dynamic> json) => new UserModel(
+        id: json["id"],
+        name: json["name"],
+        email: json["email"],
+        password: json["password"],
+      );
+
+  Map<String, dynamic> toJson() => {
+        "id": id,
+        "name": name,
+        "email": email,
+        "password": password,
+      };
+}

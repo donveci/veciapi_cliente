@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:veciapi/constants.dart';
+import 'package:veciapi/src/ui_cliente/Screens/Login/components/or_divider.dart';
+import 'package:veciapi/src/ui_cliente/Screens/Recover_pass/recoverPassPage.dart';
 import 'package:veciapi/src/ui_cliente/Screens/Signup/signupPage.dart';
 import 'package:veciapi/src/ui_cliente/Screens/Login/components/background.dart';
-import 'package:veciapi/src/ui_cliente/Screens/Login/components/or_divider.dart';
 import 'package:veciapi/src/ui_cliente/components/rounded_input_field.dart';
 import 'package:veciapi/src/ui_cliente/components/rounded_password_field.dart';
 import 'package:veciapi/src/ui_cliente/components/rounded_button.dart';
@@ -41,7 +43,19 @@ class Body extends StatelessWidget {
               text: "LOGIN",
               press: () {},
             ),
-            OrDivider(), //aca escribo el text  o de olvidar contraseña
+            OrDivider(), // deja un espacion entre el boton y el texto
+            GestureDetector(
+              onTap: () =>
+                  Navigator.pushNamed(context, RecoverPassPage.routeName),
+              child: Text(
+                "Forget your Password ?",
+                style: TextStyle(
+                  color: kPrimaryColor,
+                  fontWeight: FontWeight.w600,
+                  decoration: TextDecoration.underline,
+                ),
+              ),
+            ),
             AlreadyHaveAnAccountCheck(
               press: () {
                 Navigator.push(
