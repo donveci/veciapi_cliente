@@ -23,7 +23,7 @@ class Body extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              "LOGIN",
+              "Inicie Sesion",
               style: TextStyle(fontWeight: FontWeight.bold),
             ),
             SizedBox(height: size.height * 0.03),
@@ -33,14 +33,14 @@ class Body extends StatelessWidget {
             ),*/
             SizedBox(height: size.height * 0.03),
             RoundedInputField(
-              hintText: "Your Email",
+              hintText: "correo",
               onChanged: (value) {},
             ),
             RoundedPasswordField(
               onChanged: (value) {},
             ),
             RoundedButton(
-              text: "LOGIN",
+              text: "Ingresar",
               press: () {},
             ),
             OrDivider(), // deja un espacion entre el boton y el texto
@@ -48,7 +48,7 @@ class Body extends StatelessWidget {
               onTap: () =>
                   Navigator.pushNamed(context, RecoverPassPage.routeName),
               child: Text(
-                "Forget your Password ?",
+                "Olvidó su Contraseña?",
                 style: TextStyle(
                   color: kPrimaryColor,
                   fontWeight: FontWeight.w600,
